@@ -1,4 +1,4 @@
-package com.conectando.shared.dao;
+package com.connecting.shared.dao;
 
 public class ErrorRetrievingCostumerIDException extends CostumerDAOImplException {
     public ErrorRetrievingCostumerIDException(String message) {

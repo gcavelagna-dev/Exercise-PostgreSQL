@@ -1,4 +1,4 @@
-package com.conectando.shared.dao;
+package com.connecting.shared.dao;
 
 public class EmailAlreadyExistsException extends CostumerDAOImplException {
     public EmailAlreadyExistsException(String message) {

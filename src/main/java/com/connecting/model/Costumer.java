@@ -1,7 +1,7 @@
-package com.conectando.model;
+package com.connecting.model;
 
-import com.conectando.shared.model.CostumerEmailIsBlackException;
-import com.conectando.shared.model.CostumerNameIsBlankException;
+import com.connecting.shared.model.CostumerEmailIsBlackException;
+import com.connecting.shared.model.CostumerNameIsBlankException;
 
 public class Costumer {
 

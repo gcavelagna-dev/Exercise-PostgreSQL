@@ -1,9 +1,9 @@
-package com.conectando.application;
+package com.connecting.application;
 
-import com.conectando.dao.CostumerDAO;
-import com.conectando.dao.CostumerDAOImpl;
-import com.conectando.model.Costumer;
-import com.conectando.shared.dao.EmailAlreadyExistsException;
+import com.connecting.dao.CostumerDAO;
+import com.connecting.dao.CostumerDAOImpl;
+import com.connecting.model.Costumer;
+import com.connecting.shared.dao.EmailAlreadyExistsException;
 
 public class Main {
 

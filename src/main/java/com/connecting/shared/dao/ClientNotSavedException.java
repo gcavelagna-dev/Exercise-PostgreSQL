@@ -1,4 +1,4 @@
-package com.conectando.shared.dao;
+package com.connecting.shared.dao;
 
 public class ClientNotSavedException extends CostumerDAOImplException {
     public ClientNotSavedException(String message) {

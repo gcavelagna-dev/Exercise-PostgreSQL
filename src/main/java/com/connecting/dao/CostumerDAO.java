@@ -1,6 +1,6 @@
-package com.conectando.dao;
+package com.connecting.dao;
 
-import com.conectando.model.Costumer;
+import com.connecting.model.Costumer;
 
 public interface CostumerDAO {
 

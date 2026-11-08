@@ -1,4 +1,4 @@
-package com.conectando.shared.model;
+package com.connecting.shared.model;
 
 public class CostumerException extends RuntimeException {
     public CostumerException(String message) {

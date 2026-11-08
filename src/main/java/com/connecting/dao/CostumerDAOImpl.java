@@ -1,10 +1,10 @@
-package com.conectando.dao;
+package com.connecting.dao;
 
-import com.conectando.config.ConnectionFactory;
-import com.conectando.model.Costumer;
-import com.conectando.shared.dao.ClientNotSavedException;
-import com.conectando.shared.dao.EmailAlreadyExistsException;
-import com.conectando.shared.dao.ErrorRetrievingCostumerIDException;
+import com.connecting.config.ConnectionFactory;
+import com.connecting.model.Costumer;
+import com.connecting.shared.dao.ClientNotSavedException;
+import com.connecting.shared.dao.EmailAlreadyExistsException;
+import com.connecting.shared.dao.ErrorRetrievingCostumerIDException;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

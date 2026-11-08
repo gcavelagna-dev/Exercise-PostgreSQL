@@ -1,4 +1,4 @@
-package com.conectando.shared.connection;
+package com.connecting.shared.connection;
 
 public class ConnectionFileNotLoadException extends ConnectionFactoryException {
     public ConnectionFileNotLoadException(String message) {

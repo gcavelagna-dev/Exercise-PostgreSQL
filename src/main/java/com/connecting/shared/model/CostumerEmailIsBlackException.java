@@ -1,4 +1,4 @@
-package com.conectando.shared.model;
+package com.connecting.shared.model;
 
 public class CostumerEmailIsBlackException extends CostumerException {
     public CostumerEmailIsBlackException(String message) {

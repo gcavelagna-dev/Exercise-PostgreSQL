@@ -1,4 +1,4 @@
-package com.conectando.shared.model;
+package com.connecting.shared.model;
 
 public class CostumerNameIsBlankException extends CostumerException {
     public CostumerNameIsBlankException(String message) {

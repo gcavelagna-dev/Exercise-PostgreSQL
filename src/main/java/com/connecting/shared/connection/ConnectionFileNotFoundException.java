@@ -1,4 +1,4 @@
-package com.conectando.shared.connection;
+package com.connecting.shared.connection;
 
 public class ConnectionFileNotFoundException extends ConnectionFactoryException {
     public ConnectionFileNotFoundException(String message) {

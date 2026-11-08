@@ -1,6 +1,6 @@
-package com.conectando.config;
+package com.connecting.config;
 
-import com.conectando.shared.connection.ConnectionFileNotFoundException;
+import com.connecting.shared.connection.ConnectionFileNotFoundException;
 
 import java.io.IOException;
 import java.io.InputStream;
