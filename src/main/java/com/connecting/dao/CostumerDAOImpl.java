@@ -5,6 +5,7 @@ import com.connecting.model.Costumer;
 import com.connecting.shared.dao.ClientNotSavedException;
 import com.connecting.shared.dao.EmailAlreadyExistsException;
 import com.connecting.shared.dao.ErrorRetrievingCostumerIDException;
+import com.connecting.shared.dao.ResourceNotFoundException;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,6 +13,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CostumerDAOImpl implements CostumerDAO{
+
 
     @Override
     public void save(Costumer costumer){
@@ -57,5 +59,26 @@ public class CostumerDAOImpl implements CostumerDAO{
             throw new ErrorRetrievingCostumerIDException("Error: Retrieving customer ID" + e.getMessage(), e);
         }
         return null;
+    }
+
+    @Override
+    public void update(Costumer costumer){
+        String sql = "UPDATE clientes SET nome = ?, email = ? WHERE id = ?";
+
+        try(Connection connection = ConnectionFactory.connection();
+        PreparedStatement statement = connection.prepareStatement(sql)){
+
+            statement.setString(1, costumer.getName());
+            statement.setString(2, costumer.getEmail());
+            statement.setInt(3, costumer.getId());
+
+            int rowsAffected = statement.executeUpdate();
+            if (rowsAffected == 0){
+                System.err.println("\nNo user found with this ID.");
+            }
+
+        } catch (SQLException e) {
+            throw new ResourceNotFoundException("Customer not found for ID: " + costumer.getId());
+        }
     }
 }

@@ -7,4 +7,6 @@ public interface CostumerDAO {
     void save(Costumer costumer);
 
     Costumer findById(int id);
+
+    void update(Costumer costumer);
 }
